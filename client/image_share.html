@@ -24,7 +24,7 @@
    <div class="container">
         <h2>{{img_alt}}</h2>
        <a href="/images">
-           <img src="/{{img_src}}" alt="{{img_alt}}" class="single-img">
+           <img src="{{img_src}}" alt="{{img_alt}}" class="single-img">
        </a>
    </div>
 </template>
@@ -48,9 +48,8 @@
                     <div class="modal-title"></div>
                     <div class="modal-body">
                         <form class="js-add-image">
-                            <input type="text" name="image_src">
-                            <br>
-                            <input type="text" name="image_alt">
+                            <label for="image_src">URL: <input type="text" name="image_src"></label>
+                            <label for="image_alt">Alt Text:<input type="text" name="image_alt"></label>
                             <button class="btn btn-success">Save</button>
                         </form>   
                     </div>
@@ -71,6 +70,7 @@
         {{!-- currentUser is available by default --}}
         {{#if currentUser}} 
             <button class="btn btn-success js-show-image-form">Add image</button>
+            {{> image_add_form}}
         {{/if}}
 
         {{#if filtering_images}}

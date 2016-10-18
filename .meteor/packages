@@ -24,3 +24,4 @@ barbatus:stars-rating
 accounts-ui
 accounts-password
 iron:router
+iron:middleware-stack@1.1.0
