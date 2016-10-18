@@ -1,0 +1,18 @@
+/* CSS declarations go here */
+body {
+    background-color: #333;
+    color: #9a9a9a;
+    padding-top: 60px;
+}
+
+.thumbnail {
+    height: 500px;
+}
+
+.thumbnail-img {
+    max-height: 300px;
+}
+
+.single-img {
+    max-width: 100%;
+}
